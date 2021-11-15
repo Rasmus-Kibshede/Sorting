@@ -14,7 +14,7 @@ public class PersonSorter {
         arr[2] = new Person("Hermione", "Granger");
 
         System.out.println("Før sotering" + Arrays.toString(arr));
-        QuickSortPerson.sort(arr);
+        Arrays.sort(arr);
         System.out.println("Efter sotering" + Arrays.toString(arr));
     }
 }

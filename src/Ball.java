@@ -1,4 +1,4 @@
-public class Ball {
+public class Ball implements Comparable<Ball> {
     private int brightness;
 
     public Ball() {
@@ -21,7 +21,19 @@ public class Ball {
         return Integer.toString(brightness);
     }
 
-    public int compareTo(Ball ball) {
+/*    @Override
+    public int compareTo(Sammenlignbar other) {
+        Ball ball = (Ball) other;
         return brightness < ball.brightness ? -1 : 1;
+    }
+
+    @Override
+    public String toCSVString() {
+        return null;
+    }*/
+
+    @Override
+    public int compareTo(Ball o) {
+        return Integer.compare(brightness, o.brightness);
     }
 }

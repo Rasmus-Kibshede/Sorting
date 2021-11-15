@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 
 public class BallSorter {
 
@@ -10,7 +11,6 @@ public class BallSorter {
 
         System.out.println("Før sortering: " + Arrays.toString(balls));
         Arrays.sort(balls);
-        QuickSortBall.sort(balls);
         System.out.println("Efter sortering: " + Arrays.toString(balls));
     }
 
